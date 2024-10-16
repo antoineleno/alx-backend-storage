@@ -1,8 +1,8 @@
 -- Creates a trigger that decreases the quantity
--- of an item after adding a new order.
-DROP TRIGGER IF EXISTS reduce_quantity;
+-- from the the table items when a new order is added.
+DROP TRIGGER IF EXISTS decrease_quantity;
 DELIMITER $$
-CREATE TRIGGER reduce_quantity
+CREATE TRIGGER decrease_quantity
 AFTER INSERT ON orders
 FOR EACH ROW
 BEGIN
