@@ -2,6 +2,7 @@
 -- Check if the second number is 0
 DELIMITER //
 
+DROP FUNCTION IF EXISTS SafeDiv;
 CREATE FUNCTION SafeDiv(a INT, b INT)
 RETURNS DECIMAL(10, 2)
 DETERMINISTIC
