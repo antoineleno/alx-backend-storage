@@ -1,2 +1,2 @@
 // Script that display the number of documents in the collecdtion school
-db.school.countDocuments()
+db.school.countDocuments({})
